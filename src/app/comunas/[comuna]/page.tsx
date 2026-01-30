@@ -130,10 +130,10 @@ export default async function TrasladoPage({ params }: Props) {
                             {data.sections.map((section, index) => (
                                 <div
                                     key={index}
-                                    className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12 md:gap-20`}
+                                    className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 lg:gap-20`}
                                 >
                                     {/* Imagen */}
-                                    <div className="w-full md:w-1/2">
+                                    <div className="w-full lg:w-1/2">
                                         <div className="relative aspect-[3/4] md:h-[700px] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-green-500/5 group">
                                             <Image
                                                 src={urlForImage(section.image).width(900).height(1200).url()}
@@ -147,11 +147,11 @@ export default async function TrasladoPage({ params }: Props) {
                                     </div>
 
                                     {/* Texto */}
-                                    <div className="w-full md:w-1/2 text-left">
-                                        <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+                                    <div className="w-full lg:w-1/2 text-left">
+                                        <h3 className="text-3xl lg:text-5xl font-bold mb-6 text-white leading-tight">
                                             {section.title}
                                         </h3>
-                                        <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
+                                        <p className="text-lg lg:text-xl text-gray-400 leading-relaxed">
                                             {section.description}
                                         </p>
                                     </div>
